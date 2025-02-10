@@ -1,0 +1,144 @@
+/* CraftingVision.scss */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,600&display=swap");
+.craftingVision {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9f4ff;
+    height: 493px;
+    margin: 0;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 70px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .leftPart1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+  
+  .textCrafting {
+    color: #1a2630;
+    position: relative;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 140%;
+    margin-top: 40px;
+  }
+  
+  .CraftingSubline {
+    background: url("@/assets/vuesax/outline/CraftingSubline.svg") 0 bottom no-repeat;
+    background-size: contain;
+  }
+  
+  .LestTalk {
+    display: inline-flex;
+    border-radius: 8px;
+    background: #4361ee;
+    padding: 16px 34px;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .LestTalk:hover {
+    transform: scale(1.05);
+    background-color: #3f51b5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Note on rowsDots: mobile code uses different spacing than desktop/tablet.
+     The default here follows the mobile version. */
+  .rowsDots {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15.625px;
+    margin-top: 208px;
+    margin-right: 230px;
+    position: absolute;
+  }
+  
+  /* Mobile working image */
+  .workingWomanImg {
+    width: 286px;
+    height: 291px;
+    margin-top: 44px;
+    border-radius: 15px;
+    position: fixed;
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 670px) and (max-width: 1024px) {
+    .craftingVision {
+      flex-direction: row;
+      height: 30vh;
+      justify-content: space-between;
+    }
+    .textCrafting {
+      font-size: 2em;
+      width: 354px;
+      text-align: left;
+      margin-top: 0;
+    }
+    .leftPart1 {
+      padding-left: 6%;
+      align-items: flex-start;
+    }
+    .rowsDots {
+      margin-bottom: 160px;
+      margin-left: 455px;
+      position: absolute;
+    }
+    .workingWomanImg {
+      width: 279px;
+      height: 284px;
+      margin-top: 65px;
+      margin-right: 69px;
+    }
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1025px) {
+    .craftingVision {
+      flex-direction: row;
+      height: 623px;
+      justify-content: space-between;
+  
+    }
+    .textCrafting {
+      font-size: 54px;
+      text-align: left;
+      width: 561px;
+      margin-top: 0;
+    }
+    .leftPart1 {
+      padding-left: 135px;
+    }
+    .rowsDots {
+      margin-top: 80px;
+      margin-left: -20px;
+    }
+    .workingWomanImg {
+      width: 567.889px;
+      height: 616.016px;
+      margin-top: 100px;
+      margin-right: 135px;
+      position: relative;
+      display: flex;
+      z-index: 10;
+    }
+  }
+  

@@ -1,0 +1,175 @@
+/* StayUpdates.scss */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,600&display=swap");
+.StayUpdates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  .stayUpdatedTitle {
+    margin-top: 130px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .UpdatedSubline {
+    background: url("@/assets/vuesax/outline/UpdatedSubline.svg") 0 bottom no-repeat;
+    background-size: contain;
+  }
+  
+  .stayUpdatedGridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-top: 77px;
+    gap: 30px;
+  }
+  
+  .stayUpdatedGrid {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    height: 350px;
+    border-radius: 15px;
+    background: #e9f4ff;
+  }
+  
+  .stayUpdatedImg {
+    width: 335px;
+    height: 210px;
+    border-radius: 15px 15px 0 0;
+    background: url("@/assets/vuesax/outline/ContactSubline.svg") center/cover no-repeat, lightgray;
+  }
+  
+  .stayUpdatedGridImgTitle {
+    color: #1a2630;
+    font-size: 20px;
+    margin-top: 24px;
+    padding-left: 30px;
+    width: 295px;
+  }
+  
+  .stayUpdatedGridImgSubtitle {
+    display: flex;
+    align-items: center;
+    color: #4361ee;
+    text-align: center;
+    font-size: 16px;
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 30px;
+  }
+  
+  .readMoreArrow {
+    width: 20px;
+    height: 20px;
+    color: black;
+  }
+  
+  .stayUpdatedButton {
+    border-radius: 8px;
+    background: #4361ee;
+    display: inline-flex;
+    height: 54px;
+    padding: 16px 34px;
+    align-items: center;
+    gap: 6px;
+    margin-top: 50px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 670px) and (max-width: 1024px) {
+    .stayUpdatedTitle {
+      margin-top: 100px;
+      font-size: 32px;
+    }
+    .stayUpdatedGridContainer {
+      grid-template-columns: auto auto;
+      margin-top: 55px;
+      overflow: scroll;
+      height: 375px;
+    }
+    .stayUpdatedGrid {
+      width: 314px;
+      height: 354px;
+    }
+    .stayUpdatedImg {
+      width: 314px;
+      height: 210px;
+      border-radius: 15px 15px 0 0;
+      background: url("@/assets/vuesax/outline/UpdatedSubline.svg") center/cover no-repeat, lightgray;
+    }
+    .stayUpdatedGridImgTitle {
+      margin-top: 20px;
+      padding-left: 30px;
+    }
+    .UpdatedSubline {
+      background: url("@/assets/vuesax/outline/UpdatedSubline.svg") 0 bottom no-repeat;
+      background-size: contain;
+    }
+    .readMoreArrow {
+      width: 20px;
+      height: 20px;
+      color: black;
+    }
+    .stayUpdatedButton {
+      margin-top: 50px;
+    }
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 1025px) {
+    .stayUpdatedTitle {
+      margin-top: 130px;
+      font-size: 48px;
+    }
+    .stayUpdatedGridContainer {
+      grid-template-columns: auto auto auto;
+      margin-top: 77px;
+    }
+    .stayUpdatedGrid {
+      width: 370px;
+      height: 366px;
+    }
+    .stayUpdatedImg {
+      width: 370px;
+      height: 210px;
+      border-radius: 15px 15px 0 0;
+      background: url("@/assets/vuesax/outline/UpdatedSubline.svg") center/cover no-repeat, lightgray;
+    }
+    .UpdatedSubline {
+      background: url("@/assets/vuesax/outline/UpdatedSubline.svg") 0 bottom no-repeat;
+      background-size: contain;
+    }
+    .readMoreArrow {
+      width: 20px;
+      height: 20px;
+      color: black;
+    }
+    .stayUpdatedButton {
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 8px;
+      background: #4361ee;
+      display: inline-flex;
+      height: 54px;
+      padding: 16px 34px;
+      align-items: center;
+      gap: 6px;
+      margin-top: 50px;
+      cursor: pointer;
+    }
+    .stayUpdatedButton:hover {
+      transform: scale(1.05);
+      background-color: #264f9c;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+  }
+  

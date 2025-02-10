@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="fr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Crafting Visual Stories with Vue.js</title>
+    <!-- Il est recommandé d'importer vos styles globaux dans votre main.js ou App.vue,
+         mais vous pouvez laisser ces liens si nécessaire. -->
+    <link rel="stylesheet" href="/src/assets/styles/LandingPageMobile.scss" />
+    <link rel="stylesheet" href="/src/assets/styles/LandingPageDesktop.css" />
+    <link rel="stylesheet" href="/src/assets/styles/LandingPageTablet.css" />
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>Veuillez activer JavaScript pour utiliser cette application.</strong>
     </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <!-- Les fichiers compilés seront injectés ici -->
   </body>
 </html>

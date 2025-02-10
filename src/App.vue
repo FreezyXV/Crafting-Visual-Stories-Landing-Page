@@ -7,10 +7,10 @@
 </template>
 
 <script>
-import HeaderComponent from "@/components/HeaderSection.vue";
+import HeaderComponent from "@/components/HeaderSection";
 import FooterSection from "@/components/FooterSection.vue";
 import BrandIdentity from "@/components/BrandIdentity.vue";
-import CraftingVision from "@/components/CraftingVision.vue";
+import CraftingVision from "@/components/CraftingVision";
 import ServicesSection from "@/components/ServicesSection.vue";
 import HappyStories from "@/components/HappyStories.vue";
 import ContactSection from "@/components/ContactSection.vue";

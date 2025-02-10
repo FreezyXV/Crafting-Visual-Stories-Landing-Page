@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
+
 import HomePage from "@/components/HomePage.vue";
 import ServicesPage from "@/components/ServicesSection.vue";
 import StoriesPage from "@/components/HappyStories.vue";
@@ -12,8 +13,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
+    history: createWebHashHistory(), // 👈 Use Hash Mode for GitHub Pages
+    routes,
+  });
 
 export default router;

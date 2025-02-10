@@ -1,8 +1,15 @@
 <template>
   <div id="app">
     <HeaderComponent />
+    <CraftingVision />
+    <BrandIdentity />
+    <ServicesSection />
+    <HappyStories />
+    <ContactSection />
+    <StayUpdates />
     <router-view></router-view>
     <FooterSection />
+    
   </div>
 </template>
 
